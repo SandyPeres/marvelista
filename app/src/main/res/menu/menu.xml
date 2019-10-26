@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <item
+    android:id="@+id/search"
+    android:icon="@drawable/ic_search_black_24dp"
+    android:title=""
+    app:actionViewClass="android.support.v7.widget.SearchView"
+    app:showAsAction="collapseActionView|ifRoom" />
+
+  <item
+    android:id="@+id/filterTitle"
+    android:title="@string/filterFor">
+    <menu>
+      <group android:id="@+id/filterGroup">
+
+        <item
+          android:id="@+id/character_menu"
+          android:title="@string/characters" />
+
+        <item
+          android:id="@+id/comic_menu"
+          android:title="@string/comics" />
+
+      </group>
+    </menu>
+  </item>
+</menu>

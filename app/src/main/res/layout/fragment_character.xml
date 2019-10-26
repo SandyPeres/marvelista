@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  >
+
+  <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+      android:id="@+id/character_image"
+      android:layout_width="201dp"
+      android:layout_height="202dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="32dp"
+      android:layout_marginEnd="8dp"
+      android:elevation="1dp"
+      android:cropToPadding="true"
+      app:layout_constraintBottom_toTopOf="@id/character_title"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+    <ProgressBar
+      android:id="@+id/progress_image"
+      android:layout_width="200dp"
+      android:layout_height="200dp"
+      android:layout_marginTop="32dp"
+      android:indeterminateTint="@color/colorSecondaryLight"
+      app:layout_constraintBottom_toTopOf="@id/character_title"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/character_title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="24dp"
+      android:text="@string/loading"
+      android:textStyle="bold"
+      android:textSize="20sp"
+      android:textColor="@color/colorSecondaryLight"
+      app:layout_constraintBottom_toTopOf="@id/character_summary"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/character_image" />
+
+    <TextView
+      android:id="@+id/character_summary"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="8dp"
+      android:paddingBottom="5dp"
+      android:text="@string/loading"
+      android:textColor="@color/colorSecondaryLight"
+      app:layout_constraintBottom_toTopOf="@id/go_to_website"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/character_title" />
+
+
+    <Button
+      android:id="@+id/go_to_website"
+      android:layout_width="300dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:background="@color/colorPrimary"
+      android:text="@string/knowMoreCharacter"
+      app:layout_constraintTop_toBottomOf="@id/character_summary"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  </android.support.constraint.ConstraintLayout>
+</ScrollView>

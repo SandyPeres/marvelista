@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:card_view="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/card_view"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  android:layout_marginLeft="8dp"
+  android:layout_marginTop="8dp"
+  android:layout_marginRight="8dp"
+  android:layout_marginBottom="8dp"
+  card_view:cardCornerRadius="8dp">
+
+  <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/colorSecondaryLight"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:importantForAccessibility="yes">
+
+    <FrameLayout
+      android:id="@+id/layoutImage"
+      android:layout_width="96dp"
+      android:layout_height="96dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="8dp"
+      android:layout_marginBottom="8dp"
+      card_view:layout_constraintStart_toStartOf="parent"
+      card_view:layout_constraintTop_toTopOf="parent">
+
+      <ImageView
+        android:importantForAccessibility="no"
+        android:id="@+id/comicImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:elevation="1dp"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+      <ProgressBar
+        android:importantForAccessibility="no"
+        android:id="@+id/progress_comic_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:indeterminateTint="@color/colorPrimary"
+        android:indeterminateTintMode="src_atop"
+        card_view:layout_constraintBottom_toBottomOf="@+id/comicImage"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+
+    <FrameLayout
+      android:focusable="true"
+      android:screenReaderFocusable="true"
+      android:layout_width="208dp"
+      android:layout_height="96dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="8dp"
+      card_view:layout_constraintStart_toEndOf="@+id/layoutImage"
+      card_view:layout_constraintTop_toTopOf="parent">
+
+      <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+          android:id="@+id/knowTitle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/knowMore"
+          android:textColor="@color/colorPrimaryDark"
+          android:textSize="14sp"
+          card_view:layout_constraintStart_toStartOf="@id/comicTitle"
+          card_view:layout_constraintTop_toTopOf="parent"
+
+          />
+
+        <TextView
+          android:id="@+id/comicTitle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/colorPrimaryDark"
+          android:textSize="20sp"
+          android:textStyle="bold"
+          card_view:layout_constraintStart_toStartOf="parent"
+          card_view:layout_constraintTop_toBottomOf="@+id/knowTitle" />
+      </android.support.constraint.ConstraintLayout>
+    </FrameLayout>
+
+  </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

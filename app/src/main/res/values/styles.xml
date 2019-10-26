@@ -1,0 +1,10 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="actionBarTheme">@color/colorPrimary</item>
+        <item name="toolbarNavigationButtonStyle">@color/colorSecondaryDark</item>
+        <item name="actionModeBackground">@color/colorSecondaryLight</item>
+        <item name="android:itemBackground">@color/colorSecondaryDark</item>
+    </style>
+</resources>

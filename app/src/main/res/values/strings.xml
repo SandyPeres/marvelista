@@ -1,0 +1,15 @@
+<resources>
+  <string name="app_name">Marvelista</string>
+  <string name="api_key">490e9405e90d6cdf7f823da1d81c7972</string>
+  <string name="hash">52e42a722bdb19550e304cd646af3fbc</string>
+  <string name="searchFor">Pesquisar...</string>
+  <string name="filterFor">Filtrar por</string>
+  <string name="characters">Personagens</string>
+  <string name="comics">HQ</string>
+  <string name="knowMore">Saber mais sobre</string>
+  <string name="knowMoreCharacter">Saber mais sobre esse personagem</string>
+  <string name="knowMoreComic">Saber mais sobre essa HQ</string>
+  <string name="noResult">Não foi possível pesquisar.</string>
+  <string name="loading">Carregando...</string>
+  <string name="welcome">Bem vindo ao Marvelista!</string>
+</resources>
