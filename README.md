@@ -3,7 +3,7 @@
 
 Studying Marvels API for developers using:
 - Kotlin
-- RXJava
+- RXJava (I could have used Kotlin Coroutines for this POC but I decided to study something new :) )
 - Retrofit
 - OkHTTPClient
 - Espresso
